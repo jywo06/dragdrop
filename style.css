@@ -1,0 +1,78 @@
+@font-face {
+    font-family: myFont;
+    src: url(resources/odin-rounded.light.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+    color: whitesmoke;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(resources/fading-blue-background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#left,#right{
+    width: 300px;
+    min-height: 400px;
+    border: 2px dashed whitesmoke;
+}
+
+.list{
+    background-color:#161A22;
+    border-radius: 3px;
+    margin: 20px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    box-shadow: 0px 2px 10px rgba(255, 253, 253, 0.1);
+    font-size: 1.1rem;
+}
+#reset{
+    color: black;
+    padding: 1rem;
+    width: 10%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-shadow: 10px 10px 10px rgba(255, 253, 253, 0.1);
+    margin-top: 5px;
+}
+h1{
+    font-size: 3rem;
+    padding: 30px;
+}
+label{
+    font-size: 1.5rem;
+}
+.list.dragging {
+    background-color: #b7c9e4;
+}
+
+@media only screen and (max-width:800px){
+    h1{
+        font-size: 2.5rem;
+    }
+    #left,#right{
+        width: 250px;
+        min-height: 400px;
+        border: 2px dashed whitesmoke;
+    }
+}
