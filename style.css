@@ -21,6 +21,7 @@ body{
     background-repeat:no-repeat;
     background-position: center;
     flex-direction: column;
+    background-color:#161A22;
 }
 .container{
     display: flex;
