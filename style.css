@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFont;
-    src: url(odin-rounded.light.otf);
+    src: url(odin.light.otf);
 }
 
 *{
@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(fading-blue-background.jpg);
+    background: url(bg.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
